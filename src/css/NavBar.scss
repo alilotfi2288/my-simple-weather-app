@@ -1,0 +1,54 @@
+.nav{
+    width: 100%;
+    min-height: 10vh;
+    background-color: #8E24AA;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    h2{
+        font-weight: bold;
+    }
+    .city-search{
+        border: none;
+        width: 30%;
+        padding: 12px;
+        border-radius: 24px;
+        background-color: rgba(206, 147, 216 , 0.5);
+        color: white;
+        text-align: center;
+        &::placeholder{
+            color: white;
+        }
+        &:focus{
+            outline: thin white auto;
+        }
+    }
+    .unit > *{
+        padding: 0px 4px;
+        font-weight: bold;
+        cursor: pointer;
+        &:nth-child(2){
+            cursor: auto;
+        }
+    }
+}
+.sugesstions{
+    position: absolute;
+    top: 9vh;
+    left: 55%;
+    transform: translatex(-55%);
+    width: 30%;
+    padding: 12px;
+    background-color: rgb(233, 233, 233);
+    color: #424242;
+    border-radius: 16px;
+    .city-item{
+        padding: 4px;
+        transition: background-color 0.3s ease-in-out;
+        &:hover{
+            background-color: white;
+        }
+    }
+}
