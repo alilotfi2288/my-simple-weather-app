@@ -20,7 +20,12 @@ class NavBar extends Component {
             });
         }
     }
-
+    handleClick = (city) => {
+        this.setState({
+            data: []
+        });
+        this.props.setCity(city);
+    }
 
     render() {
         let { data } = this.state;
@@ -31,7 +36,7 @@ class NavBar extends Component {
                     {data.map(city => {
                         if (city.type === 'city') {
                             return (
-                                <div className="city-item" key={Math.random()} onClick={() => { this.props.setCity(city.name) }}>
+                                <div className="city-item" key={Math.random()} onClick={() => { this.handleClick(city.name) }}>
                                     <p>{city.name} {city.country_name}</p>
                                 </div>
                             )

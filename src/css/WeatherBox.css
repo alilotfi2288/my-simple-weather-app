@@ -1,0 +1,50 @@
+.card {
+  width: 55vw;
+  margin: 16px auto;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.weather-box {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#8e24aa), to(#ff47dd));
+  background-image: linear-gradient(0deg, #8e24aa, #ff47dd);
+  color: white;
+}
+
+.weather-box .info p {
+  opacity: 0.7;
+}
+
+.weather-box .info h2 {
+  font-size: 48px;
+}
+
+.weather-box .info h3 {
+  font-weight: 400;
+}
+
+.weather-box .icon img {
+  width: 86px;
+  height: 86px;
+}
+
+.wind-box .icon img {
+  width: 240px;
+  height: 148px;
+}
+
+.wind-box .info * {
+  margin: 12px auto;
+}
+/*# sourceMappingURL=WeatherBox.css.map */

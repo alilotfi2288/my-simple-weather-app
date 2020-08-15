@@ -16,3 +16,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.copy-right{
+  position: absolute;
+  bottom: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #9E9E9E;
+}
+.copy-right a{
+    color: #1565C0;
+    text-decoration: none;
+}
+.copy-right a:hover{
+  text-decoration: underline;
+}
