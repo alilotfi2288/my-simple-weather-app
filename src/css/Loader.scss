@@ -1,0 +1,30 @@
+.loader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.loading {
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  background-color: #8e24aa;
+  margin: 0px 7px;
+  animation: loader 1s infinite ease-in-out;
+  z-index: 2;
+}
+@keyframes loader{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 0.3;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
