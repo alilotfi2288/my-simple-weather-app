@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import WindImage from '../img/wind.svg';
-import '../css/WeatherBox.css'
+import '../css/WeatherBox.min.css'
 
 class WeatherBox extends Component {
     render() {

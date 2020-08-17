@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/NavBar.css';
+import '../css/NavBar.min.css';
 import axios from 'axios';
 
 class NavBar extends Component {
