@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/NavBar.min.css';
 import axios from 'axios';
+import { searchConfig } from '../api/weatherConfig';
 
 class NavBar extends Component {
     state = {
@@ -8,7 +9,7 @@ class NavBar extends Component {
     }
     handleChange = (e) => {
         if (e.target.value !== '') {
-            axios.get(`http://autocomplete.travelpayouts.com/places2?term=${e.target.value}&locale=en&type=city`)
+            axios.get(searchConfig(e.target.value))
                 .then(res => {
                     this.setState({
                         data: res.data
@@ -49,7 +50,7 @@ class NavBar extends Component {
 
         return (
             <div className="nav">
-                <h2 className="logo">Weather App</h2>
+                <h2 data-testid="title" className="logo">Weather App</h2>
                 <input className="city-search" placeholder="city name..." onChange={this.handleChange} />
                 <div className="unit">
                     <span onClick={() => { this.props.changeUnit('C') }}>C</span>

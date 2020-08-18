@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapShot testing 1`] = `
+<div
+  className="nav"
+>
+  <h2
+    className="logo"
+    data-testid="title"
+  >
+    Weather App
+  </h2>
+  <input
+    className="city-search"
+    onChange={[Function]}
+    placeholder="city name..."
+  />
+  <div
+    className="unit"
+  >
+    <span
+      onClick={[Function]}
+    >
+      C
+    </span>
+    <span>
+      |
+    </span>
+    <span
+      onClick={[Function]}
+    >
+      F
+    </span>
+  </div>
+</div>
+`;
