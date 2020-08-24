@@ -1,5 +1,6 @@
 .card {
   width: 55vw;
+  min-width: 300px;
   margin: 16px auto;
   padding: 24px;
   display: flex;
@@ -30,16 +31,26 @@
   }
 }
 
-.wind-box{
-  .icon{
-    img{
+.wind-box {
+  .icon {
+    img {
       width: 240px;
       height: 148px;
     }
   }
-  .info{
-    *{
+  .info {
+    * {
       margin: 12px auto;
+    }
+  }
+}
+@media screen and (max-width: 610px) {
+  .wind-box {
+    .icon {
+      img {
+        width: 180px;
+        height: 100px;
+      }
     }
   }
 }

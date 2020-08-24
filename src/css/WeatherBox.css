@@ -1,5 +1,6 @@
 .card {
   width: 55vw;
+  min-width: 300px;
   margin: 16px auto;
   padding: 24px;
   display: -webkit-box;
@@ -46,5 +47,12 @@
 
 .wind-box .info * {
   margin: 12px auto;
+}
+
+@media screen and (max-width: 610px) {
+  .wind-box .icon img {
+    width: 180px;
+    height: 100px;
+  }
 }
 /*# sourceMappingURL=WeatherBox.css.map */
