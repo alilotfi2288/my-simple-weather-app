@@ -1,0 +1,22 @@
+.error-container{
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f44336;
+    padding: 16px;
+    border-radius: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img{
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+    }
+    p{
+        color: white;
+        font-weight: 500;
+    }
+}
